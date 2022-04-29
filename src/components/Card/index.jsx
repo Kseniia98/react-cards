@@ -5,17 +5,22 @@ import star from "./img/star.png";
 import branch from "./img/branch.png"
 
 function Card(props){
+
   const { data } = props;
-  console.log(data);
+
   return(
+
     <div className="card">
+
       <div className="cardHeader">
         <img className="image" src={book} alt="book" />
         <h3>{data.full_name}</h3>
       </div>
+
       <div>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ex!adipisicing elit. Eos, ex!
       </div>
+      
       <div className="cardFooter">
         <div>
           {data.language === null ? "None" : data.language}
@@ -30,8 +35,8 @@ function Card(props){
         </div>
       </div>
     </div>
-  )
 
+  )
 }
 
 export default Card;

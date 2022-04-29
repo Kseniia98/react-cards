@@ -27,7 +27,7 @@ class Cards extends React.Component{
   render(){
     return(
       <div className="cards">
-        {this.state.list.map(data => <Card data={data}/>)}
+        {this.state.list.map((data) => <Card data={data}/>)}
       </div>
     )
   }
